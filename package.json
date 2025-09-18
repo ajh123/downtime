@@ -1,0 +1,33 @@
+{
+  "name": "statusbot",
+  "version": "1.0.0",
+  "description": "App for automating GitHub issues based on @upptime",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajh123/statusbot.git"
+  },
+  "author": {
+    "name": "ajh123"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajh123/statusbot/issues"
+  },
+  "homepage": "https://github.com/ajh123/statusbot#readme",
+  "dependencies": {
+    "tslint": "^5.20.1",
+    "typescript": "^5.9.2"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts"
+}
