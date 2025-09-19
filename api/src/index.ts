@@ -3,7 +3,7 @@ import { fileURLToPath } from "url";
 import { Hono } from 'hono'
 import { serve } from '@hono/node-server'
 
-import github from "./integrations/github.ts";
+import github from "./integrations/github.js";
 
 const app = new Hono()
 
